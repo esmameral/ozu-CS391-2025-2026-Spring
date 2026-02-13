@@ -8,11 +8,25 @@
 
 <body>
     <form action="success.html" method="POST">
-        Course code :<input type="text" name="courseCode" id="courseCode">
+        Course code :
+        <input type="text" name="courseCode" id="courseCode" size="5" required maxlength="5" minlength="4">
         <br />
-        Course Description<input type="text" name="courseDesc" id="courseDesc">
+        Course Title<input type="text" name="courseTitle" id="courseTitle" required minlength="10" maxlength="40">
         <br />
-        Credit: <input type="text" name="courseCredit" id="courseCredit">
+        Course Desc
+        <textarea name="desc" rows="5" cols="40"></textarea>
+        <br />
+        Credit: <input type="number" name="courseCredit" id="courseCredit" min="1" max="6">
+        <br/>
+        Instructor
+        <select name="instructor"  multiple size="4">
+            <option value="OTY">Olcay Taner Yildiz</option>
+            <option value="HS">Hasan Sozer</option>
+            <option value="EM">Esma Meral</option>
+            <option value="RA" selected>Reyhan Aydoğan</option>
+            <option value="FK">Furkan Kirac</option>
+</select>
+
         <input type="submit" name="Save">
 
     </form>
