@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Style the header */
+header {
+    overflow: hidden;
+    background-color: #A30050;
+    border-color: blue;
+    border-style: solid;
+}
+
+
+header nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.column {
+    border-color: green;
+    border-style: solid;
+}
+
+/* Change color on hover */
+header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Clear floats after the columns */
+footer {
+    color: black;
+    background-color: #ddd;
+    border-color: red;
+    border-style: solid;
+}
