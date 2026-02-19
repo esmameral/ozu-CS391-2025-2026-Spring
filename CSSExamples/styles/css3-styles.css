@@ -3,14 +3,15 @@
 	height: 50px;
 	background-color: red;
 	animation-name: animation;
-	animation-duration: 5s;
+	animation-duration: 5s ;
+	animation-iteration-count: infinite
   }
   
 @keyframes animation { 
     0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
+    50%  {background-color:pink; left:200px; top:200px;}
+    75%  {background-color:lightgreen; left:0px; top:200px;}
     100% {background-color:red; left:0px; top:0px;}
 }
 
@@ -52,7 +53,7 @@
   margin-left: 40px;
 }
 .transform:hover{
-  transform: skew(30deg) scale(1.5,1.5) rotate(30deg) translate(20px, 30px);
+  transform: skew(30deg) scale(1.5,1.5) rotate(30deg) translate(40px, 50px);
 }
 
 .multicolumn {
