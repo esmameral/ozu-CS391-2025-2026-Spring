@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
 }
@@ -10,8 +11,11 @@ body {
 header {
     overflow: hidden;
     background-color: #A30050;
-    border-color: blue;
-    border-style: solid;
+    top: 0;
+    height: 52px;
+    position: fixed;
+    width: 100%;
+    padding: 3px;
 }
 
 
@@ -23,10 +27,22 @@ header nav a {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
+.content {
+    padding-top: 55px;
+}
 
 .column {
-    border-color: green;
-    border-style: solid;
+    float: left;
+    padding: 10px;
+}
+
+/* Left column */
+.column.side {
+    width: 20%;
+}
+/* Middle column */
+.column.middle {
+    width: 80%;
 }
 
 /* Change color on hover */
@@ -35,10 +51,26 @@ header a:hover {
     color: black;
 }
 
-/* Clear floats after the columns */
+
 footer {
-    color: black;
     background-color: #ddd;
-    border-color: red;
-    border-style: solid;
+    padding: 5px 5px 5px 100px;
+    margin: 0;
+    clear: both;
+    width: 100%;
+    height: 255px;
+}
+
+header nav {
+    float: right;
+    padding-top: 10px;
+}
+
+footer div {
+    width: 31%;
+    margin-top: 10px;
+}
+
+footer div ul {
+    list-style-type: none;
 }
