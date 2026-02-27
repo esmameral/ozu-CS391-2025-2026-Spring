@@ -3,33 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Add New Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        <style>
+        .btn-primary {
+            background-color: #fc7f66;
+            border-color: hsl(57, 96%, 69%);
+        }
+    </style>
 </head>
 
 <body>
-    <form action="success.html" method="POST">
-        Course code :
-        <input type="text" name="courseCode" id="courseCode" size="5" required maxlength="5" minlength="4">
-        <br />
-        Course Title<input type="text" name="courseTitle" id="courseTitle" required minlength="10" maxlength="40">
-        <br />
-        Course Desc
-        <textarea name="desc" rows="5" cols="40"></textarea>
-        <br />
-        Credit: <input type="number" name="courseCredit" id="courseCredit" min="1" max="6">
-        <br/>
-        Instructor
-        <select name="instructor"  multiple size="4">
-            <option value="OTY">Olcay Taner Yildiz</option>
-            <option value="HS">Hasan Sozer</option>
-            <option value="EM">Esma Meral</option>
-            <option value="RA" selected>Reyhan Aydoğan</option>
-            <option value="FK">Furkan Kirac</option>
-</select>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="success.html" method="POST">
+                    <div class="mb-3">
+                        <label for="courseCode" class="form-label">Course code</label>
+                        <input type="text" class="form-control form-control-sm" name="courseCode" id="courseCode" size="5" required
+                            maxlength="5" minlength="4">
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseTitle" class="form-label">Course Title</label>
+                       <input type="text" class="form-control form-control-sm" name="courseTitle" id="courseTitle" required minlength="10"
+                        maxlength="40">
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseTitle" class="form-label">Course Desc</label>
+                       
+                    <textarea name="desc" class="form-control form-control-sm" id="courseTitle" rows="5" cols="40"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseCredit" class="form-label">Credit</label>
+                       <input type="number" class="form-control form-control-sm" name="courseCredit" id="courseCredit" min="1" max="6">
+                    </div>
+                    <div class="mb-3">
+                        <label for="instructor" class="form-label">Instructor</label>
+                       
+                    <select id="instructor" class="form-select form-select-sm">
+                        <option value="OTY">Olcay Taner Yildiz</option>
+                        <option value="HS">Hasan Sozer</option>
+                        <option value="EM">Esma Meral</option>
+                        <option value="RA" selected>Reyhan Aydoğan</option>
+                        <option value="FK">Furkan Kirac</option>
+                    </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
 
-        <input type="submit" name="Save">
+                </form>
+            </div>
+        </div>
+    </div>
 
-    </form>
 </body>
 
 </html>
