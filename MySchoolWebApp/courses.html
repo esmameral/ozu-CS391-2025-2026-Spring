@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script src="./assets/js/scripts.js"></script>
     <style>
         .card-body p {
             line-height: 1;
@@ -19,8 +20,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="courseList">
         <div class="row row-cols-2  row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-6">
+            
             <div class="col">
                 <div class="card border-info text-bg-light h-60 m-3" style="width: 12rem;">
                     <div class="card-header">CS391
@@ -34,87 +36,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-60 border-info text-bg-light m-3" style="width: 12rem;">
-                    <div class="card-header">CS391
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-title">Web Application Programming</h6>
-                        <p class="card-text">Credit: 40</p>
-                        <p class="card-text">Quota: 70</p>
-                        <p class="card-text">Instructor: Esma Meral</p>
-                        <a href="#" class="btn btn-primary">Details..</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-60 border-info text-bg-light m-3" style="width: 12rem;">
-                    <div class="card-header">CS391
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-title">Web Application Programming</h6>
-                        <p class="card-text">Credit: 40</p>
-                        <p class="card-text">Quota: 70</p>
-                        <p class="card-text">Instructor: Esma Meral</p>
-                        <a href="#" class="btn btn-primary">Details..</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-60 border-info text-bg-light m-3" style="width: 12rem;">
-                    <div class="card-header">CS391
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-title">Web Application Programming</h6>
-                        <p class="card-text">Credit: 40</p>
-                        <p class="card-text">Quota: 70</p>
-                        <p class="card-text">Instructor: Esma Meral</p>
-                        <a href="#" class="btn btn-primary">Details..</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-60 border-info text-bg-light m-3" style="width: 12rem;">
-                    <div class="card-header">CS391
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-title">Web Application Programming</h6>
-                        <p class="card-text">Credit: 40</p>
-                        <p class="card-text">Quota: 70</p>
-                        <p class="card-text">Instructor: Esma Meral</p>
-                        <a href="#" class="btn btn-primary">Details..</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-60 border-info text-bg-light m-3" style="width: 12rem;">
-                    <div class="card-header">CS391
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-title">Web Application Programming</h6>
-                        <p class="card-text">Credit: 40</p>
-                        <p class="card-text">Quota: 70</p>
-                        <p class="card-text">Instructor: Esma Meral</p>
-                        <a href="#" class="btn btn-primary">Details..</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-60 border-info text-bg-light m-3" style="width: 12rem;">
-                    <div class="card-header">CS391
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-title">Web Application Programming</h6>
-                        <p class="card-text">Credit: 40</p>
-                        <p class="card-text">Quota: 70</p>
-                        <p class="card-text">Instructor: Esma Meral</p>
-                        <a href="#" class="btn btn-primary">Details..</a>
-                    </div>
-                </div>
-            </div>
+ 
         </div>
     </div>
-
+<script>
+    generateCourseCards()
+</script>
 </body>
 
 </html>

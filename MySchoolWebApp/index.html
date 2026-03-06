@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to school web app</title>
+    <!--
+    <script>
+        alert("embedded example");
+    </script>
+    -->
+    
 </head>
 
 <body>
@@ -13,13 +19,22 @@
 
     <h1>Welcome</h1>
     <h3>Content:</h3>
+    <!--
+    <script src="./assets/js/scripts.js"></script>
+    -->
     <a href="https://www.ozyegin.edu.tr/" target="_blank">Ozyegin University</a>
     <ul>
-        <li><a href="courses.html">Display Courses</a></li>
+        <li><a href="courses.html" onclick="alert('inline example');">Display Courses</a></li>
         <li><a href="">Display Students</a></li>
         <li><a href="addnewcourse.html">Define a new Course</a></li>
     </ul>
-
+<!--
+    <div id="sample">....</div>
+    <script>
+        alert("before updating sample")
+        document.getElementById("sample").innerHTML="<b>Hello Sample Text</b>";
+    </script>
+-->
 </body>
 
 </html>
