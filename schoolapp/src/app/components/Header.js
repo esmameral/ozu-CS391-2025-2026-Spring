@@ -1,7 +1,8 @@
-import Name from "./Name"
-const Header = () => {
-    return <div> My Web Application
-        <Name />
-    </div>
+
+const Header = (props) => {
+
+    const {message}=props;
+    return <div> {message}</div>
+    
 }
 export default Header;
