@@ -14,6 +14,7 @@ const Catalog = ({ products }) => {
                     <th>Operations</th>
                 </tr>
             </thead>
+            <tbody>
             {products.map((item, index) => {
                 return (<tr key={index}>
                     <td>{item.name}</td>
@@ -26,11 +27,8 @@ const Catalog = ({ products }) => {
             }
 
             )
-
-
-
-
             }
+            </tbody>
         </table>)
 }
 export default Catalog;
