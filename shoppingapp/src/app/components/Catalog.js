@@ -1,34 +1,21 @@
 
+import { Button, Container, Row, Col } from "reactstrap";
 import Rate from "./Rate";
+import ProductCard from "./ProductCard";
 
-const Catalog = ({ products }) => {
-
-
+const Catalog = ({ products, onDelete }) => {
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Description</th>
-                    <th>Operations</th>
-                </tr>
-            </thead>
-            <tbody>
-            {products.map((item, index) => {
-                return (<tr key={index}>
-                    <td>{item.name}</td>
-                    <td>{item.price}</td>
-                    <td>{item.description}</td>
-                    <td><Rate /></td>
-                </tr>
-
+        <Container>
+            <Row className="row-cols-2  row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-6">
+                {products.map((item, index) => {
+                    return (
+                        <Col key={index}><ProductCard product={item} onDelete={onDelete}></ProductCard></Col>
+                    )
+                }
                 )
-            }
-
-            )
-            }
-            </tbody>
-        </table>)
+                }
+            </Row>
+        </Container>
+    )
 }
 export default Catalog;
