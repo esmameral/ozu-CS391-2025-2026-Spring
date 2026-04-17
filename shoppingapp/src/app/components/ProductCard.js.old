@@ -1,14 +1,9 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
 import Rate from "./Rate";
-import { useContext } from 'react';
-import { MyContext } from './MyContext';
 
-const ProductCard = ({product}) => {
-    const contextObject = useContext(MyContext);
-    const {onDelete}=contextObject;
+const ProductCard = ({product,onDelete}) => {
     return (
         <Card className="border-info text-bg-light m-3"
             style={{ height: "22rem", width: '12rem', overflow: "hidden" }}>

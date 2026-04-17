@@ -1,7 +1,13 @@
+'use client'
 import styles from "./page.module.css";
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-const AddNewProduct = ({onAdd}) => {
+import { useContext } from 'react';
+import { MyContext } from "../MyContext"; 
+
+const AddNewProduct = () => {
+    const contextObject = useContext(MyContext);
+    const {onAdd}=contextObject;
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
     const [newProduct, setNewProduct] = useState(

@@ -2,20 +2,14 @@
 import { Container, Row, Col } from "reactstrap";
 
 import ProductCard from "./ProductCard";
-import { useContext } from 'react';
-import { MyContext } from './MyContext';
 
-
-const Catalog = () => {
-    const contextObject = useContext(MyContext);
-    const products=contextObject.products;
-  
+const Catalog = ({ products, onDelete }) => {
     return (
         <Container>
             <Row className="row-cols-2  row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-6">
                 {products.map((item, index) => {
                     return (
-                        <Col key={index}><ProductCard product={item}></ProductCard></Col>
+                        <Col key={index}><ProductCard product={item} onDelete={onDelete}></ProductCard></Col>
                     )
                 }
                 )

@@ -1,11 +1,16 @@
 "use client"
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 const Rate = () => {
 
     const [likeCount, setLikeCount] = useState(0);
     const [dislikeCount, setDislikeCount] = useState(0);
+    useEffect(() => {
+        console.log("UseEffect runs! "+new Date())
+    },[likeCount,dislikeCount]
+    )
+
     return <>
         {likeCount}
         <Link href="" onClick={() => setLikeCount(likeCount + 1)}>
