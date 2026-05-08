@@ -2,11 +2,13 @@
   "name": "shoppingapp",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+  "scripts": {  
     "dev": "next dev",
+    "json-server":"json-server data.json --watch --port 8000",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "all": "npm-run-all --parallel dev json-server"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",

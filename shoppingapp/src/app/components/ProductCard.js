@@ -12,12 +12,13 @@ const ProductCard = ({product}) => {
     return (
         <Card className="border-info text-bg-light m-3"
             style={{ height: "22rem", width: '12rem', overflow: "hidden" }}>
-
+           <Link href={"/pages/"+product.id}> 
             <Image
                 alt="Product name"
                 src={product.thumbnail}
                 width={150} height={150}
             />
+            </Link>  
             <CardBody className="d-flex flex-column">
                 <CardTitle tag="h5" className="text-center">
                     {product.name}
