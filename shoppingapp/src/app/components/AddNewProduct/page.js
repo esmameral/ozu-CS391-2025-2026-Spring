@@ -12,7 +12,6 @@ const AddNewProduct = () => {
     const toggle = () => setModal(!modal);
     const [newProduct, setNewProduct] = useState(
         {
-            "id": "",
             "name": "",
             "description": "",
             "price": "",
@@ -31,7 +30,6 @@ const AddNewProduct = () => {
     function handleAddNewProduct(){
         onAdd(newProduct);
         setNewProduct[{
-            "id": "",
             "name": "",
             "description": "",
             "price": "",
@@ -51,8 +49,7 @@ const AddNewProduct = () => {
             <Modal isOpen={modal} toggle={toggle}>
                 <ModalHeader className={styles.mycolor} toggle={toggle}>Add New Product</ModalHeader>
                 <ModalBody>
-                    <input type="text" name="id" placeholder="Enter product id" onChange={handleChange}></input>
-                    <br />
+                    
                     <input type="text" name="name" placeholder="Enter product name" onChange={handleChange}></input>
                     <br />
                     <input type="text" name="description" placeholder="Enter product description" onChange={handleChange} size={40}></input>
